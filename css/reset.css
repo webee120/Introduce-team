@@ -1,6 +1,14 @@
 @charset "uft-8";
 
 /* reset.css */
+:root{
+  --main-color : #507d9a;
+  --sub-color1 : #40b0ff;
+  --sub-color2 : #2a93fb;
+  --sub-color3 : #0070c0;
+  --sub-color4 : #005490;
+  }  
+
 html{
   font-size: 10px;
 }
@@ -9,7 +17,7 @@ html{
   box-sizing: border-box;
 }
 body{
-  font-family: "Noto Sans", sans-serif;
+  font-family: sans-serif;
   font-size: 1.4rem; line-height: 1.35; color: #000;
 }
 table{
