@@ -1,12 +1,32 @@
 @charset "utf-8";
 
-/* common */
-.inner{
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 200px;
+:root{
+  --main-color : #507d9a;
+  --sub-color1 : #40b0ff;
+  --sub-color2 : #2a93fb;
+  --sub-color3 : #0070c0;
+  --sub-color4 : #005490;
+  }  
+
+html{
+  font-size: 10px;
 }
 
+/* common */
+.inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-align: center;
+  height: 100vh;
+}
+
+
+#log-in h1{
+  margin-bottom: 30px;
+  color: var(--sub-color3);
+  font-size: 4rem;
+}
 #log-in fieldset{
   display: block;
   width: 500px;
@@ -15,16 +35,55 @@
   border: 1px solid #ccc;
   border-radius: 10px;
 }
-
+#log-in fieldset h2{
+  margin: 20px 0 40px;
+}
 #log-in input[type="text"]{
   border: 1px solid #000;
-  padding: 10px;
+  padding: 20px 10px;
   display: block;
   margin: 10px auto;
   width: 80%;
+}
+#log-in input[type="checkbox"]{
+  display: none;
+}
+#log-in input[type="checkbox"] + label{
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+#log-in input[type="checkbox"]:checked + label{
+  background-color: var(--sub-color2);
+  color: #fff;
 }
 #log-in fieldset .btn-login{
   display: block;
   padding: 10px;
   width: 100%;
+  background-color: var(--sub-color2);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+#log-in fieldset .btn-login:hover{
+  background-color: var(--sub-color4);
+}
+#log-in .log-in-utill {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+#log-in .log-in-utill a{
+  display: block;
+  margin: 10px 20px;
+}
+#log-in .log-in-utill a:hover{
+  text-decoration: underline;
 }
