@@ -85,7 +85,12 @@ dl{
   border-radius: 50px;
   width: 150px;
   text-align: center;
+  transition: all 0.5s;
 }
 .btn a:last-child{
-  background-color: #40b0ff;
+  background-color: var(--sub-color2);
+}
+
+.btn a:hover{
+  background-color: var(--sub-color4);
 }
