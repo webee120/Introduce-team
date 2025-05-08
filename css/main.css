@@ -38,6 +38,7 @@ ul li{
   display: flex;
   flex-direction: column;
   border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 ul li:first-child{
   background-color: #2a93fb;

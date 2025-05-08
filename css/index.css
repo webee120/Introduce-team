@@ -34,6 +34,7 @@ html{
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #log-in fieldset h2{
   margin: 20px 0 40px;
