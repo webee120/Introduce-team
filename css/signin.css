@@ -51,10 +51,16 @@ fieldset input[type="date"] {
   border-radius: 5px;
 }
 
+.btn{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
 form button {
-  width: 100%;
+  width: calc((100% - 10px) /2);
   padding: 12px;
-  margin-top: 20px;
   background-color: var(--sub-color1);
   color: white;
   border: none;
@@ -62,7 +68,13 @@ form button {
   font-size: 16px;
   cursor: pointer;
 }
-form button:hover {
-  background-color: var(--sub-color4);
-}
 
+form a {
+  width: calc((100% - 10px) /2);
+  padding: 12px;
+  background-color: var(--sub-color1);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
