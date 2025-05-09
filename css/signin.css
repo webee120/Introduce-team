@@ -70,7 +70,6 @@ form button {
   cursor: pointer;
   transition: all 0.5s;
 }
-
 form a {
   width: calc((100% - 10px) /2);
   padding: 12px;
@@ -79,7 +78,10 @@ form a {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
+}
+form button a{
+  background-color: transparent;
 }
 
 .btn > *:hover{
